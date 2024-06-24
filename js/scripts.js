@@ -10,10 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-
-    // Toggle dark mode
-    const toggleDarkModeButton = document.getElementById('toggleDarkMode');
-    toggleDarkModeButton.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-    });
 });
