@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,8 +8,8 @@ body {
 }
 
 body.dark-mode {
-    background: #333;
-    color: #fff;
+    background: #121212;
+    color: #e0e0e0;
 }
 
 header {
@@ -17,6 +17,7 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 header .profile-img {
@@ -24,6 +25,8 @@ header .profile-img {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 1rem;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .container {
@@ -33,22 +36,25 @@ header .profile-img {
 
 h1, h2 {
     color: #333;
+    margin-top: 0;
 }
 
 body.dark-mode h1,
 body.dark-mode h2 {
-    color: #fff;
+    color: #e0e0e0;
 }
 
 main {
     background: #fff;
     padding: 2rem;
     margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: background 0.3s, color 0.3s;
 }
 
 body.dark-mode main {
-    background: #444;
+    background: #1e1e1e;
 }
 
 footer {
@@ -61,20 +67,69 @@ footer {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin-right: 1rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
 }
 
 button#toggleDarkMode {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+button#toggleDarkMode:hover {
+    background: #575757;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #575757;
+}
+
+a:visited {
+    color: #333;
+}
+
+body.dark-mode a {
+    color: #e0e0e0;
+}
+
+body.dark-mode a:hover {
+    color: #ffffff;
 }
