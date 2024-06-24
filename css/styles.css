@@ -4,6 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #333;
+    color: #fff;
 }
 
 header {
@@ -29,10 +35,20 @@ h1, h2 {
     color: #333;
 }
 
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #fff;
+}
+
 main {
     background: #fff;
     padding: 2rem;
     margin: 2rem 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode main {
+    background: #444;
 }
 
 footer {
@@ -40,4 +56,25 @@ footer {
     padding: 1rem 0;
     background: #333;
     color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button#toggleDarkMode {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
